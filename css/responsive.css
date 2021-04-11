@@ -1,0 +1,23 @@
+@media only screen and (min-width:750px){
+    body{
+        margin-left:var(--appBar-height);
+    }
+    .appBar{
+        margin:auto;
+        transform-origin: center;
+        width:100vh;
+        transform:translateY(calc(50vh - 50%)) translateX(-50vw) rotateZ(-90deg);
+    }
+    .appBar .appBarDrawerIcon{
+        width: 0px;
+        transform:scaleX(0) rotate(3600deg);
+    }
+    .chatScreen{
+        --chatScreen-height:100vh;
+        margin-top:calc(-1 * var(--appBar-height)) !important;
+    }
+    .registerScreen{
+        height: 100vh;
+        margin-top:calc(-1 * var(--appBar-height)) !important;
+    }
+}

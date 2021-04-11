@@ -1,0 +1,101 @@
+
+:root{
+    /* for tiny stuff  */
+    --text-color:#FFF;
+    --bg-color:#222;
+
+    
+    
+    --color-primary:#00e371;
+    --color-secondary:#0096e5;
+    --theme-appBarColor:rgba(0, 0, 0, 0.6);
+    --theme-appBarTextColor:#FFF;
+    /* --chatScreen-bg-color:linear-gradient(to-top-right,rgba(127, 0, 231, 0.6),rgba(0, 255, 149, 0.6));
+    --chatScreen-inputContainerColor:linear-gradient(to-top-right,rgba(127, 0, 231, 0.6),rgba(0, 255, 149, 0.6)); */
+    
+    --chatScreen-me-bgColor:#00e37165;
+    --chatScreen-me-dateColor:#aaa;
+    --chatScreen-you-dateColor:#aaa;
+    --chatScreen-you-bgColor:rgba(0,0,0,0.4);
+
+    --chatScreen-you-name-color:orangered;
+    --chatScreen-you-border-color:rgba(225,225,225,0.1);
+
+    --chatScreen-bg-color:rgb(0, 0, 0,0.75);
+    --chatScreen-inputContainerColor:rgba(0,0,0, 0.4);
+    
+    /* for calculations  */
+    --scroll-bar-width:4px;
+    --appBar-height:60px;
+    --chatScreen-InputContainerHeight:60px;
+
+
+}
+
+.fa,
+.fas,
+.far,
+.fab{
+    font-size:1.1rem;
+}
+
+*{ 
+    box-sizing: border-box;
+    transition:0.3s all cubic-bezier(0.075, 0.82, 0.165, 1); 
+}
+@font-face{
+    src:local('../assets/fonts/FiraCode-Medium.otf');
+    font-family: 'Fira Code';
+}
+body{
+    font-family: 'Fira Code';
+    color:var(--text-color);
+    overflow:hidden;
+    margin:0;
+    background-color: #222;
+    /* background: url("../assets/Blue-Squares.jpg"); */
+    background: url("../assets/Abstract-Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* overflow-x: hidden; */
+}
+
+.flex-v,
+.flexc-v,
+.flexc,
+.flex{
+    display: flex;
+}
+
+.flexc-v,
+.flexc{
+    justify-content: center;
+}
+
+.flexc-v,
+.flexc{
+    align-items: center;
+}
+
+.flex-v,
+.flexc-v{
+    flex-direction: column;
+}
+
+
+
+
+
+/* etc */
+
+::-webkit-scrollbar{
+
+    width:var(--scroll-bar-width);
+    background: var(--bg-color);
+    border-radius:10px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to top right,var(--color-primary),var(--color-secondary));
+    border-radius: 10px;
+}

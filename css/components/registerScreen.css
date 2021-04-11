@@ -1,0 +1,61 @@
+.registerScreen{
+    height:calc(100vh - var(--appBar-height));
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background: var(--chatScreen-bg-color);
+    justify-content: center;
+    align-items: center;
+}
+.registrationBox{
+    box-shadow:
+    20px 20px 0px 4px rgba(225,0,0,0.4),
+    0px 20px 0px 4px rgba(0,225,225,0.4),
+    20px 0px 0px 4px rgba(225,0,0,0.4),
+    0px -20px 0px 4px rgba(0,225,225,0.4),
+    -20px 0px 0px 4px rgba(225,0,0,0.4),
+    -20px -20px 0px 4px rgba(0,225,225,0.4);
+    background: #111;
+    border-radius:25px;
+    width:80vw;
+    max-width:530px;
+    min-height:350px;
+    display: flex;
+    flex-direction: column;
+}
+.registrationBox .logo{
+    font-size:3rem;
+    margin:6px auto;
+    padding-top:8px;
+    color:#333;
+}
+.tabItem[active="1"]{
+    display: flex;
+    padding-top:25px;
+    align-items: center;
+    flex-direction: column;
+}
+input[type="text"]{
+    margin:15px auto;
+    outline:none;
+    padding:10px;
+    min-width:100px;
+    border-radius: 0px 25px;
+    background: rgba(0, 119, 255, 0.1);
+    border:none;
+    border:1px solid var(--color-secondary);
+    resize: none;
+    width:calc(100% - 2 * var(--appBar-height) - 8px);
+    backdrop-filter: blur(2px);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:var(--text-color);
+}
+button{
+    background: linear-gradient(to top right,var(--color-primary),var(--color-secondary));
+    box-shadow: 0px 0px 10px var(--color-primary),0px 0px 10px var(--color-secondary);
+    padding:8px 16px;
+    border:none;
+    border-radius:15px;
+    color:var(--text-color);
+}

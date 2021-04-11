@@ -1,0 +1,53 @@
+
+.appBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:var(--theme-appBarTextColor);
+    width:100%;
+    position: sticky;
+    background:var(--theme-appBarColor);
+    backdrop-filter: blur(20px);
+    height: var(--appBar-height);
+    /* min-height: 60px;
+    max-height: 90px; */
+    margin:auto;
+    padding:0px 15px 0px 15px;
+    /* transform:translateY(0px) translateX(0px) rotateZ(0deg);  */
+    /* border-radius:0px 0px 20px 20px; */
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+}
+.appBarAppName{
+    margin:auto;
+    text-align: center;
+}
+.appBarAppLogo{
+    max-width: 60px;
+    max-height: 100%;
+}
+/* .appBarPath{
+} 
+*/
+/* TODO: SEE if could be more logical about FontAwesome */
+.appBarPathSlash::before{
+    content:"\f054";
+    font-size:0.8rem;
+    padding-right:4px;
+    padding-left:4px;
+}
+.appBarPath::before{
+    content:"\e065";
+    font-size:0.8rem;
+    padding-right:4px;
+    padding-left:4px;
+    color:rgb(144, 192, 255);
+}
+.appBarPathAt::before{
+    content:"\f1fa";
+    font-size:0.8rem;
+    padding-right:4px;    
+    padding-left:4px;    
+}
+/* .appBarAppName > *{
+    margin:auto;
+} */
