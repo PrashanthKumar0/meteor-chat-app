@@ -1,6 +1,6 @@
 # meteor-chat-app
 a web chat app based on server sent events
-<a href="https://impk.herokuapp.com">
+<a href="https://meteor-chat-app0.herokuapp.com/">
     see a live version ?
 </a>
 
